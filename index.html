@@ -11,33 +11,36 @@
 
     <title>Roofhopper</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="56">
 
     <!-- Header -->
 
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img src="./images/brand.png" alt="logo-page">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar">
               <ul class="navbar-nav ml-auto">
-                <li class="nav-item pr-2 active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item pr-2">
+                  <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item pr-2">
-                  <a class="nav-link" href="#">Roofs net</a>
+                  <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item pr-2">
-                  <a class="nav-link" href="#">The ladder</a>
+                  <a class="nav-link" href="#community">Roofs net</a>
                 </li>
                 <li class="nav-item pr-2">
-                  <a class="nav-link special-item" href="#">Become a Hopper!</a>
+                  <a class="nav-link" href="#teachers">Mentors</a>
+                </li>
+                <li class="nav-item pr-2">
+                  <a class="nav-link special-item" href="#" data-toggle="modal" data-target="#modalSingUp">Become a Hopper!</a>
                 </li>
               </ul>
             </div>
@@ -69,7 +72,7 @@
                   <p class="d-none d-md-block">The network for the brave and bold enough to reach to the highs and appreciate the beauty of their cities and towns. <br>
                   Be part of the of the jorney of hundreds of members</p>
                   <a class="btn btn-outline-light mr-3" href="#"> Learn More</a>
-                  <button type="button" class="btn btn-primary">Become a Hopper</button>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSingUp">Become a Hopper</button>
                 </div>
               </div>
             </div>
@@ -81,6 +84,20 @@
         <div class="container mt-4">
           <h2>Who are we</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sint, quidem numquam impedit quasi quo reiciendis similique cupiditate tempora, est delectus blanditiis accusamus at dolores architecto doloremque. Reprehenderit, molestias atque!</p>
+        </div>
+      </section>
+
+      <section id="community">
+        <div class="container-fluid">
+          <div class="row mt-4">
+            <div class="col-12 col-md pl-0 pr-0">
+            <img src="https://live-production.wcms.abc-cdn.net.au/d3747e3df62d9dc9bbb307bea84e3b72?impolicy=wcms_crop_resize&cropH=481&cropW=856&xPos=0&yPos=0&width=862&height=485" alt="community image">
+            </div>
+            <div class="col-12 col-md pt-4 pb-4 com-text">
+              <h2>Meet the community</h2>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi exercitationem veniam nihil cupiditate impedit amet possimus molestiae repellendus facere illum reprehenderit rerum minima explicabo, obcaecati quasi minus ab? Neque, vel.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -133,8 +150,9 @@
         </div>
       </section>
 
-    </main>
+      <!-- add a new secction to activate last scrollspy  -->
 
+    </main>
     <!-- End Main -->
 
     <!-- Footer -->
@@ -160,17 +178,26 @@
 
     <!-- End Footer -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalSingUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>

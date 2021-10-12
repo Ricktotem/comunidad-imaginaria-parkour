@@ -60,6 +60,19 @@
     border-bottom: 1px solid var(--fifth-color);
 }
 
+#community .container-fluid{
+    background-color: #343a40;
+}
+
+#community .container-fluid img{
+    object-fit: cover;
+    width: 100%;
+}
+
+#community .container-fluid .com-text{
+    color:white;
+}
+
 #trainers .badge{
     padding: 5px;
     color: white;
