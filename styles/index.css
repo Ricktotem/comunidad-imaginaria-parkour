@@ -91,3 +91,20 @@
 #footer a{
     color:black;
 }
+
+.modal .form-group{
+    width: 100%;
+}
+
+.modal .btn-primary{
+    background-color: #b31f49;
+    border-color: transparent;
+}
+
+.modal .btn-primary:focus{
+    box-shadow: 0 0 0 0.2rem #c93962;
+}
+
+.modal .btn-primary:active {
+    background-color: #b31f49;
+}
